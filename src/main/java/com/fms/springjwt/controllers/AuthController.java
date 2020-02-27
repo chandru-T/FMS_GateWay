@@ -1,4 +1,4 @@
-package com.bezkoder.springjwt.controllers;
+package com.fms.springjwt.controllers;
 
 import java.util.HashSet;
 import java.util.List;
@@ -20,17 +20,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.bezkoder.springjwt.models.ERole;
-import com.bezkoder.springjwt.models.Role;
-import com.bezkoder.springjwt.models.User;
-import com.bezkoder.springjwt.payload.request.LoginRequest;
-import com.bezkoder.springjwt.payload.request.SignupRequest;
-import com.bezkoder.springjwt.payload.response.JwtResponse;
-import com.bezkoder.springjwt.payload.response.MessageResponse;
-import com.bezkoder.springjwt.repository.RoleRepository;
-import com.bezkoder.springjwt.repository.UserRepository;
-import com.bezkoder.springjwt.security.jwt.JwtUtils;
-import com.bezkoder.springjwt.security.services.UserDetailsImpl;
+import com.fms.springjwt.models.ERole;
+import com.fms.springjwt.models.Role;
+import com.fms.springjwt.models.User;
+import com.fms.springjwt.payload.request.LoginRequest;
+import com.fms.springjwt.payload.request.SignupRequest;
+import com.fms.springjwt.payload.response.JwtResponse;
+import com.fms.springjwt.payload.response.MessageResponse;
+import com.fms.springjwt.repository.RoleRepository;
+import com.fms.springjwt.repository.UserRepository;
+import com.fms.springjwt.security.jwt.JwtUtils;
+import com.fms.springjwt.security.services.UserDetailsImpl;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
