@@ -96,7 +96,7 @@ public class AuthController {
 		Set<Role> roles = new HashSet<>();
 
 		if (strRoles == null) {
-			Role userRole = roleRepository.findByName(ERole.PARTICIPANT)
+			Role userRole = roleRepository.findByName(ERole.PARTICIPATED)
 					.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
 			roles.add(userRole);
 		} else {
@@ -108,14 +108,29 @@ public class AuthController {
 					roles.add(adminRole);
 
 					break;
+					
 				case "pmo":
 					Role modRole = roleRepository.findByName(ERole.PMO)
 							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
 					roles.add(modRole);
 
 					break;
+					
+				case "NotParticipated":
+					Role NotParticipatedRole = roleRepository.findByName(ERole.NOTPARTICIPATED)
+							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+					roles.add(NotParticipatedRole);
+
+					break;
+					
+				case "Unregistered":
+					Role UnregisteredRole = roleRepository.findByName(ERole.UNREGISTERED)
+							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
+					roles.add(UnregisteredRole);
+
+					break;
 				default:
-					Role userRole = roleRepository.findByName(ERole.PARTICIPANT)
+					Role userRole = roleRepository.findByName(ERole.PARTICIPATED)
 							.orElseThrow(() -> new RuntimeException("Error: Role is not found."));
 					roles.add(userRole);
 				}
