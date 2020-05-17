@@ -1,4 +1,4 @@
-package com.fms.springjwt.security.services;
+package com.fms.spring.gateway.security.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -7,8 +7,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.fms.springjwt.models.User;
-import com.fms.springjwt.repository.UserRepository;
+import com.fms.spring.gateway.models.User;
+import com.fms.spring.gateway.repository.UserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

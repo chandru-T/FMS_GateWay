@@ -1,4 +1,4 @@
-package com.fms.springjwt.models;
+package com.fms.spring.gateway.models;
 
 import java.util.HashSet;
 import java.util.Set;

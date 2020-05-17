@@ -1,4 +1,4 @@
-package com.fms.springjwt.payload.request;
+package com.fms.spring.gateway.payload.request;
 
 import javax.validation.constraints.NotBlank;
 

@@ -1,4 +1,4 @@
-package com.fms.springjwt.payload.response;
+package com.fms.spring.gateway.payload.response;
 
 public class MessageResponse {
 	private String message;

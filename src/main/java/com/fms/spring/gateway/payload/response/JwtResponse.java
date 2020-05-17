@@ -1,4 +1,4 @@
-package com.fms.springjwt.payload.response;
+package com.fms.spring.gateway.payload.response;
 
 import java.util.List;
 

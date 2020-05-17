@@ -1,4 +1,4 @@
-package com.fms.springjwt.security.jwt;
+package com.fms.spring.gateway.security.jwt;
 
 import java.io.IOException;
 

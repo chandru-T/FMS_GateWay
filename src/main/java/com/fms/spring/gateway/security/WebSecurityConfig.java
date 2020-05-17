@@ -1,4 +1,4 @@
-package com.fms.springjwt.security;
+package com.fms.spring.gateway.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -14,9 +14,9 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.fms.springjwt.security.jwt.AuthEntryPointJwt;
-import com.fms.springjwt.security.jwt.AuthTokenFilter;
-import com.fms.springjwt.security.services.UserDetailsServiceImpl;
+import com.fms.spring.gateway.security.jwt.AuthEntryPointJwt;
+import com.fms.spring.gateway.security.jwt.AuthTokenFilter;
+import com.fms.spring.gateway.security.services.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity
